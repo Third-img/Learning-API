@@ -80,19 +80,19 @@ async function getWeatherData(lat, lon) {
     const backgroundVideo = document.querySelector(".weather-condition");
     switch (conditionName.toLowerCase()) {
       case "clear":
-        backgroundVideo.innerHTML = `<source src="videos/clear.mp4">`;
+        backgroundVideo.innerHTML = `<source src="Videos/clear.mp4">`;
         break;
       case "sunny":
       case "cloudy":
       case "partly cloudy":
-        backgroundVideo.innerHTML = `<source src="videos/cloudy.mp4">`;
+        backgroundVideo.innerHTML = `<source src="Videos/cloudy.mp4">`;
         break;
       case "rain":
       case "heavy rain":
-        backgroundVideo.innerHTML = `<source src="videos/rain.mp4">`;
+        backgroundVideo.innerHTML = `<source src="Videos/rain.mp4">`;
         break;
       case "patchy rain nearby":
-        backgroundVideo.innerHTML = `<source src="videos/light rain.mp4">`;
+        backgroundVideo.innerHTML = `<source src="Videos/light rain.mp4">`;
         break;
     }
     backgroundVideo.load();

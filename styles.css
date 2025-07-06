@@ -1,0 +1,71 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+  font-family: "Oswald";
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 350px;
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.weather-location {
+  font-size: 1.8rem;
+}
+.weather-temperature {
+  display: flex;
+  font-size: 4rem;
+  font-weight: 500;
+}
+#celcius-icon{
+    font-size: 2.5rem;
+}
+.weather-type {
+  font-size: 1.2rem;
+  font-weight: 350;
+}
+.weather-highs-lows {
+  display: flex;
+  gap: 10px;
+  font-weight: 350;
+}
+#reload-button {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+#reload-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.411);
+}
+#reload-button:active {
+  transform: scale(0.9);
+  color: white;
+  background-color: rgb(204, 204, 204);
+}

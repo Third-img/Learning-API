@@ -32,11 +32,11 @@ async function getWeatherData(lat, lon) {
     let response;
     if (weatherLocation === "") {
       response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=62d4c358194d49c6ad970958250607&q=${lat},${lon}`
+        `https://api.weatherapi.com/v1/forecast.json?key=62d4c358194d49c6ad970958250607&q=${lat},${lon}`
       );
     } else {
       response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=62d4c358194d49c6ad970958250607&q=${weatherLocation}`
+        `https://api.weatherapi.com/v1/forecast.json?key=62d4c358194d49c6ad970958250607&q=${weatherLocation}`
       );
     }
 

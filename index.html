@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet" href="styles.css" />
     <title>Learning API</title>
   </head>
   <body>
+    <video autoplay loop muted plays-inline class="weather-condition"></video>
+    <section class="top-search-bar">
+        <span class="material-symbols-outlined" id="search-button">search</span>
+        <input type="text" name="search-bar" id="search-bar" placeholder="Search Location">
+    </section>
     <section class="hero">
       <div class="container">
         <div class="weather-location"></div>
@@ -20,7 +26,6 @@
           <div class="weather-lows"></div>
         </div>
       </div>
-      <button id="reload-button">Reload</button>
     </section>
     <script src="script.js"></script>
   </body>
